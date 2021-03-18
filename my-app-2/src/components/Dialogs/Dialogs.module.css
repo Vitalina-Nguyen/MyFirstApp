@@ -1,0 +1,21 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    font-family: Barlow,sans-serif;
+}
+
+.dialogsItems .dialogItem {
+    padding: 5px;
+}
+
+.dialogsItems .dialogItem .active {
+    color: burlywood;
+}
+
+.massages {
+
+}
+
+.massages .massage {
+    padding: 5px;
+}
