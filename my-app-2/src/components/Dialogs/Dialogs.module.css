@@ -16,6 +16,14 @@
 
 }
 
+.friendMassageElements {
+    color: #000;
+}
+
+.myMassageElements {
+    color: #000;
+}
+
 .massages .massage {
     padding: 5px;
 }
