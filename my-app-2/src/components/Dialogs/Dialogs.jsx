@@ -7,8 +7,9 @@ import Massage from './Massage/Massage.jsx';
 const Dialogs = (props) => {
 
   let dialogsElements = props.state.dialogs.map ( dialog => <DialogItem name = {dialog.name} id = {dialog.id} />);
-  let myMassageElements = props.state.myMassages.map ( massage => <Massage myMassage = {massage.myMassages} />);
-  let friendMassageElements = props.state.friendMassages.map ( massage => <Massage friendMassage = {massage.friendMassages} />);
+ 
+  let massageElements = props.state.massages.map ( massage => <Massage massage = {massage.massage} />);
+  // let friendMassageElements = props.state.friendMassages.map ( massage => <Massage friendMassage = {massage.massage} />);
 
   return (
     <div className={s.dialogs}>
@@ -16,8 +17,8 @@ const Dialogs = (props) => {
         {dialogsElements}
       </div>
       <div className={s.massages}>
-        {friendMassageElements}
-        {myMassageElements}
+        {massageElements}
+
       </div>
     </div>
   )

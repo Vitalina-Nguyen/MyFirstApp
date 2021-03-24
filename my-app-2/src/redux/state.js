@@ -13,14 +13,13 @@ let state = {
             { id: 4, name: 'Nasty' },
             { id: 5, name: 'Irina' }
         ],
-        myMassages: [
+
+        massages: [
             { id: 1, massage: 'Great' },
-            { id: 2, massage: 'Yo'}
+            { id: 2, massage: 'Yo'},
+            { id: 3, massage: "Hi! What's up?" },
+            { id: 4, massage: 'Yo' }
         ],
-        friendMassages: [
-            { id: 1, massage: "Hi! What's up?" },
-            { id: 2, massage: 'Yo' }
-        ]
     }
 
 }
