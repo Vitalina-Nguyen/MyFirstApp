@@ -3,6 +3,7 @@ import React from "react";
 import s from "./Dialogs.module.css";
 import DialogItem from './DialogItem/DialogItem.jsx';
 import Massage from './Massage/Massage.jsx';
+import WriteMassage from './WriteMassage/WriteMassage.jsx';
 
 const Dialogs = (props) => {
 
@@ -18,8 +19,9 @@ const Dialogs = (props) => {
       </div>
       <div className={s.massages}>
         {massageElements}
-
+        <WriteMassage />
       </div>
+      
     </div>
   )
 };

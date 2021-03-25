@@ -12,6 +12,11 @@
     color: burlywood;
 }
 
+.dialogItem text {
+    text-decoration: none;
+    color: #000;
+}
+
 .massages {
 color: #000;
 }
