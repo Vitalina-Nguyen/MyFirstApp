@@ -4,13 +4,17 @@ import Post from "./Post/Post.jsx";
 
 const MyPosts = (props) => {
 
+//Создаём массив со всеми постави из бизнеса
   let postsElement = props.posts.map ( p => <Post post = {p.post} likesCount = {p.likeCount}/> );
 
+// Создаём ссылку на ведённый текст в поле
   let newPostElement = React.createRef();
+
 
   let addPost = () => {
     let text = newPostElement.current.value;
-    alert (text);
+    props.addPost(text);
+    newPostElement.current.value = ' '
   }
 
   return (

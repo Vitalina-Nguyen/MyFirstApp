@@ -11,7 +11,7 @@ const Profile = (props) => {
         <img src="https://html5css.ru/css/img_lights.jpg"></img>
       </div>
       <div className={s.item}>photo + info</div>
-      <MyPosts posts = {props.state.posts} />
+      <MyPosts posts = {props.state.posts} addPost = {props.addPost}/>
     </div>
   );
 }

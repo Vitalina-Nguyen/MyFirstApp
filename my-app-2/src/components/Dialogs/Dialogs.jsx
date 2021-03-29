@@ -2,24 +2,24 @@ import React from "react";
 // import { NavLink } from "react-router-dom";
 import s from "./Dialogs.module.css";
 import DialogItem from './DialogItem/DialogItem.jsx';
-import Massage from './Massage/Massage.jsx';
-import WriteMassage from './WriteMassage/WriteMassage.jsx';
+import Message from './Message/Message.jsx';
+import WriteMessage from './WriteMessage/WriteMessage.jsx';
 
 const Dialogs = (props) => {
 
   let dialogsElements = props.state.dialogs.map ( dialog => <DialogItem name = {dialog.name} id = {dialog.id} />);
  
-  let massageElements = props.state.massages.map ( massage => <Massage massage = {massage.massage} />);
-  // let friendMassageElements = props.state.friendMassages.map ( massage => <Massage friendMassage = {massage.massage} />);
+  let messageElements = props.state.messages.map ( message => <Message message = {message.message} />);
+  // let friendMessageElements = props.state.friendMessages.map ( message => <Message friendMessage = {message.message} />);
 
   return (
     <div className={s.dialogs}>
       <div className={s.dialogsItems}>
         {dialogsElements}
       </div>
-      <div className={s.massages}>
-        {massageElements}
-        <WriteMassage />
+      <div className={s.messages}>
+        {messageElements}
+        <WriteMessage />
       </div>
       
     </div>

@@ -17,18 +17,18 @@
     color: #000;
 }
 
-.massages {
+.messages {
 color: #000;
 }
 
-.friendMassageElements {
+.friendMessageElements {
     color: #000;
 }
 
-.myMassageElements {
+.myMessageElements {
     color: #000;
 }
 
-.massages .massage {
+.messages .message {
     padding: 5px;
 }
